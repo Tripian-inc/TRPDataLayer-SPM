@@ -1,0 +1,4 @@
+
+# git "file:///Users/evrenyasar/Xcode/ModularIOS/TRPRestKit" "api_v3"
+git "https://github.com/Tripian-inc/TRPRestKit" "api_v3"
+git "https://github.com/Tripian-inc/TRPFoundationKit" "master"

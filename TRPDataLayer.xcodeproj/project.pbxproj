@@ -1,0 +1,1946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B265067225574FE500E4C1C6 /* TRPDataLayerAggregator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B265067325574FE500E4C1C6 /* Build configuration list for PBXAggregateTarget "TRPDataLayerAggregator" */;
+			buildPhases = (
+				B265067925574FEA00E4C1C6 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = TRPDataLayerAggregator;
+			productName = TRPDataLayerAggregator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6B542A4A2C5256DA00480273 /* TRPExportItinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B542A492C5256DA00480273 /* TRPExportItinerary.swift */; };
+		6B547150271EEFE100DD4F72 /* TRPRestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B978BE72697AC1A008DFDFF /* TRPRestKit.framework */; };
+		6B6A52B228BBAA2A003125ED /* OfferUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A52B128BBAA2A003125ED /* OfferUseCases.swift */; };
+		6B6A52B428BBACAE003125ED /* TRPOfferUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A52B328BBACAE003125ED /* TRPOfferUseCases.swift */; };
+		6B6A52B628BBAD23003125ED /* OfferRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A52B528BBAD23003125ED /* OfferRepository.swift */; };
+		6B6A52B828BBAF08003125ED /* TRPOfferRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A52B728BBAF08003125ED /* TRPOfferRepository.swift */; };
+		6B6A52BB28BBAF37003125ED /* OfferRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A52BA28BBAF37003125ED /* OfferRemoteApi.swift */; };
+		6B6A52BD28BBAF98003125ED /* TRPOfferRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A52BC28BBAF98003125ED /* TRPOfferRemoteApi.swift */; };
+		6B978B9F26967C00008DFDFF /* TRPFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B352F7E269672B200B7C314 /* TRPFoundationKit.framework */; };
+		6BA6C5E728A2FF7900E2DB69 /* TRPOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C5E628A2FF7900E2DB69 /* TRPOffer.swift */; };
+		6BA6C5E928A2FFE900E2DB69 /* TRPOfferProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C5E828A2FFE900E2DB69 /* TRPOfferProductType.swift */; };
+		6BA6C5EB28A3009100E2DB69 /* TRPOfferTimeFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C5EA28A3009100E2DB69 /* TRPOfferTimeFrame.swift */; };
+		6BA6C5ED28A301AE00E2DB69 /* OfferMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C5EC28A301AE00E2DB69 /* OfferMapper.swift */; };
+		6BA6C5EF28A319E400E2DB69 /* OfferProductTypeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C5EE28A319E400E2DB69 /* OfferProductTypeMapper.swift */; };
+		6BA6C5F128A31ADD00E2DB69 /* OfferTimeFrameMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6C5F028A31ADD00E2DB69 /* OfferTimeFrameMapper.swift */; };
+		6BC19C2427BF8A2700696348 /* TRPPreGeneratedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC19C2327BF8A2700696348 /* TRPPreGeneratedTheme.swift */; };
+		6BED465D2C8DD833008B067A /* TRPLanguagesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED465C2C8DD833008B067A /* TRPLanguagesUseCases.swift */; };
+		6BED46622C8DD87F008B067A /* TRPLanguagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED46612C8DD87F008B067A /* TRPLanguagesRepository.swift */; };
+		6BED46642C8DD89B008B067A /* LanguagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED46632C8DD89B008B067A /* LanguagesRepository.swift */; };
+		6BED46662C8DD905008B067A /* TRPLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED46652C8DD905008B067A /* TRPLanguage.swift */; };
+		6BED46682C8DDB2E008B067A /* FetchLanguagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED46672C8DDB2E008B067A /* FetchLanguagesUseCase.swift */; };
+		B20667922781833600988D8F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20667912781833600988D8F /* Reachability.swift */; };
+		B2066795278183AD00988D8F /* ReachabilityUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2066794278183AD00988D8F /* ReachabilityUseCases.swift */; };
+		B247773224D2E39200A255A9 /* QuestionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247773124D2E39200A255A9 /* QuestionsRepository.swift */; };
+		B257553424E3E67500FF1039 /* StepUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257553324E3E67500FF1039 /* StepUseCase.swift */; };
+		B257553924E3EB2F00FF1039 /* TRPTripModeUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257553824E3EB2F00FF1039 /* TRPTripModeUseCases.swift */; };
+		B257553C24E3ECD200FF1039 /* TripUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257553B24E3ECD200FF1039 /* TripUseCases.swift */; };
+		B257554124E3FDB400FF1039 /* StepRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257554024E3FDB400FF1039 /* StepRepository.swift */; };
+		B257554324E3FF8500FF1039 /* TRPStepRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257554224E3FF8500FF1039 /* TRPStepRepository.swift */; };
+		B257554624E3FFAA00FF1039 /* StepRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257554524E3FFAA00FF1039 /* StepRemoteApi.swift */; };
+		B257554824E3FFC500FF1039 /* TRPStepRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257554724E3FFC500FF1039 /* TRPStepRemoteApi.swift */; };
+		B257554F24E4069D00FF1039 /* PlanRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257554E24E4069D00FF1039 /* PlanRepository.swift */; };
+		B257555224E4076C00FF1039 /* PlanRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257555124E4076C00FF1039 /* PlanRemoteApi.swift */; };
+		B257555424E4078000FF1039 /* TRPPlanRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257555324E4078000FF1039 /* TRPPlanRemoteApi.swift */; };
+		B257555624E409F500FF1039 /* TRPPlanRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257555524E409F500FF1039 /* TRPPlanRepository.swift */; };
+		B257555924E40BF200FF1039 /* TripModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257555824E40BF200FF1039 /* TripModelRepository.swift */; };
+		B257555B24E40C0800FF1039 /* TRPTripModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257555A24E40C0800FF1039 /* TRPTripModelRepository.swift */; };
+		B257555E24E4163000FF1039 /* PlanUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257555D24E4163000FF1039 /* PlanUseCases.swift */; };
+		B257556124E41E2700FF1039 /* TripModelUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257556024E41E2700FF1039 /* TripModelUseCases.swift */; };
+		B257556324E4235A00FF1039 /* TRPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257556224E4235A00FF1039 /* TRPImage.swift */; };
+		B257556524E4236F00FF1039 /* TRPImageOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257556424E4236F00FF1039 /* TRPImageOwner.swift */; };
+		B257556724E4239900FF1039 /* ImageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257556624E4239900FF1039 /* ImageMapper.swift */; };
+		B257556B24E4268600FF1039 /* TRPCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257556A24E4268600FF1039 /* TRPCategory.swift */; };
+		B257556D24E426DE00FF1039 /* TRPBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257556C24E426DE00FF1039 /* TRPBooking.swift */; };
+		B259F34A24E524B500358AFB /* BookingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B259F34924E524B500358AFB /* BookingMapper.swift */; };
+		B259F35224E526B500358AFB /* CategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B259F35124E526B500358AFB /* CategoryMapper.swift */; };
+		B25A583A24D9418200102FC5 /* TRPQuestionUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A583924D9418200102FC5 /* TRPQuestionUseCases.swift */; };
+		B25A584524D9807A00102FC5 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A584424D9807A00102FC5 /* UserInfoRepository.swift */; };
+		B25A584724D981DF00102FC5 /* TRPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A584624D981DF00102FC5 /* TRPUser.swift */; };
+		B25A584924D9822000102FC5 /* TRPUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A584824D9822000102FC5 /* TRPUserProfile.swift */; };
+		B25A584E24D9829D00102FC5 /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A584D24D9829D00102FC5 /* UserMapper.swift */; };
+		B25A585024D982E100102FC5 /* UserProfileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A584F24D982E100102FC5 /* UserProfileMapper.swift */; };
+		B25A585324D9840F00102FC5 /* UserInfoRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585224D9840F00102FC5 /* UserInfoRemoteApi.swift */; };
+		B25A585524D9843F00102FC5 /* TRPUserInfoRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585424D9843F00102FC5 /* TRPUserInfoRemoteApi.swift */; };
+		B25A585824D9852F00102FC5 /* UserInfoLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585724D9852F00102FC5 /* UserInfoLocalStorage.swift */; };
+		B25A585A24D9854600102FC5 /* TRPUserInfoLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585924D9854600102FC5 /* TRPUserInfoLocalStorage.swift */; };
+		B25A585C24D9856600102FC5 /* TRPUserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585B24D9856600102FC5 /* TRPUserInfoRepository.swift */; };
+		B25A585E24D9873B00102FC5 /* UserInfoUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585D24D9873B00102FC5 /* UserInfoUseCases.swift */; };
+		B25A586024D9947700102FC5 /* TRPUserInfoUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A585F24D9947700102FC5 /* TRPUserInfoUseCases.swift */; };
+		B25A586324D9C9DD00102FC5 /* TRPCompanion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A586224D9C9DD00102FC5 /* TRPCompanion.swift */; };
+		B25A586524D9CA0800102FC5 /* CompanionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A586424D9CA0800102FC5 /* CompanionMapper.swift */; };
+		B25A586724D9CB2B00102FC5 /* CompanionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A586624D9CB2B00102FC5 /* CompanionRepository.swift */; };
+		B25A586A24D9CD8E00102FC5 /* CompanionRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A586924D9CD8E00102FC5 /* CompanionRemoteApi.swift */; };
+		B25A586C24D9CDC800102FC5 /* TRPCompanionRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A586B24D9CDC800102FC5 /* TRPCompanionRemoteApi.swift */; };
+		B25A586F24D9CF7300102FC5 /* CompanionLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A586E24D9CF7300102FC5 /* CompanionLocalStorage.swift */; };
+		B25A587124D9CFE100102FC5 /* TRPCompanionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587024D9CFE100102FC5 /* TRPCompanionRepository.swift */; };
+		B25A587424D9F3F200102FC5 /* CompanionUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587324D9F3F200102FC5 /* CompanionUseCases.swift */; };
+		B25A587624D9F67500102FC5 /* TRPCompanionUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587524D9F67500102FC5 /* TRPCompanionUseCases.swift */; };
+		B25A587A24DACF9900102FC5 /* TRPTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587924DACF9900102FC5 /* TRPTrip.swift */; };
+		B25A587C24DAD74200102FC5 /* TripMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587B24DAD74200102FC5 /* TripMapper.swift */; };
+		B25A587E24DAD9DB00102FC5 /* TRPPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587D24DAD9DB00102FC5 /* TRPPlan.swift */; };
+		B25A588024DADA1500102FC5 /* TRPStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A587F24DADA1500102FC5 /* TRPStep.swift */; };
+		B25A588224DADA3500102FC5 /* TRPPoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A588124DADA3500102FC5 /* TRPPoi.swift */; };
+		B25A588424DADA8000102FC5 /* PlanMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A588324DADA8000102FC5 /* PlanMapper.swift */; };
+		B25A588624DADBB200102FC5 /* StepMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A588524DADBB200102FC5 /* StepMapper.swift */; };
+		B25A588824DADBFD00102FC5 /* PoiMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A588724DADBFD00102FC5 /* PoiMapper.swift */; };
+		B25A588D24DAFEE000102FC5 /* TripRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A588C24DAFEE000102FC5 /* TripRemoteApi.swift */; };
+		B25A588F24DAFEF200102FC5 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A588E24DAFEF200102FC5 /* TripRepository.swift */; };
+		B25A589524DB041600102FC5 /* TRPTripRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A589424DB041600102FC5 /* TRPTripRemoteApi.swift */; };
+		B25A58A624DB9D7C00102FC5 /* TripLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A58A524DB9D7C00102FC5 /* TripLocalStorage.swift */; };
+		B25A58A824DB9D9B00102FC5 /* TRPTripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A58A724DB9D9B00102FC5 /* TRPTripRepository.swift */; };
+		B25A58AC24DBA06500102FC5 /* TRPCreateTripUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A58AB24DBA06500102FC5 /* TRPCreateTripUseCase.swift */; };
+		B25A58B324DBA3EE00102FC5 /* TRPEditTripUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A58B224DBA3EE00102FC5 /* TRPEditTripUseCases.swift */; };
+		B25AE09824F7D3770093DDF2 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AE09724F7D3770093DDF2 /* Array+Extensions.swift */; };
+		B25AE0B424F93C980093DDF2 /* LastSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AE0B324F93C980093DDF2 /* LastSearchRepository.swift */; };
+		B25AE0B624F93E930093DDF2 /* TRPLastSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AE0B524F93E930093DDF2 /* TRPLastSearchRepository.swift */; };
+		B25AE0B924F93F420093DDF2 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AE0B824F93F420093DDF2 /* Storage.swift */; };
+		B25AE0BC24F944470093DDF2 /* LastSearchUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AE0BB24F944470093DDF2 /* LastSearchUseCases.swift */; };
+		B25AE0BE24F944B80093DDF2 /* TRPLastSearchUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25AE0BD24F944B80093DDF2 /* TRPLastSearchUseCases.swift */; };
+		B25D35C024C4F0020015F66C /* TRPDataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D35B624C4F0020015F66C /* TRPDataLayer.framework */; };
+		B25D35C524C4F0020015F66C /* TRPDataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35C424C4F0020015F66C /* TRPDataLayerTests.swift */; };
+		B25D35C724C4F0020015F66C /* TRPDataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B25D35B924C4F0020015F66C /* TRPDataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B25D35E024C4F1610015F66C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35DF24C4F1610015F66C /* Cancellable.swift */; };
+		B25D35E324C4F1D30015F66C /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35E224C4F1D30015F66C /* UseCase.swift */; };
+		B25D35EB24C4F2620015F66C /* ValueObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35EA24C4F2620015F66C /* ValueObserver.swift */; };
+		B25D35ED24C4F2970015F66C /* TRPFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35EC24C4F2970015F66C /* TRPFavoriteRepository.swift */; };
+		B25D35F824C4F48B0015F66C /* TRPFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35EC24C4F2970015F66C /* TRPFavoriteRepository.swift */; };
+		B25D35F924C4F4A20015F66C /* ValueObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35EA24C4F2620015F66C /* ValueObserver.swift */; };
+		B25D361024C5026B0015F66C /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35DF24C4F1610015F66C /* Cancellable.swift */; };
+		B25D361124C5026D0015F66C /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D35E224C4F1D30015F66C /* UseCase.swift */; };
+		B25D778024F3E16B00B7BEB1 /* UserReactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D777F24F3E16B00B7BEB1 /* UserReactionRepository.swift */; };
+		B25D778224F3E1A500B7BEB1 /* TRPUserReaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D778124F3E1A500B7BEB1 /* TRPUserReaction.swift */; };
+		B25D778424F3E1E200B7BEB1 /* TRPUserReactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D778324F3E1E200B7BEB1 /* TRPUserReactionType.swift */; };
+		B25D778724F3E7D600B7BEB1 /* UserReactionRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D778624F3E7D600B7BEB1 /* UserReactionRemoteApi.swift */; };
+		B25D778924F3E7E700B7BEB1 /* TRPUserReactionRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D778824F3E7E700B7BEB1 /* TRPUserReactionRemoteApi.swift */; };
+		B25D778B24F3E87200B7BEB1 /* UserReactionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D778A24F3E87200B7BEB1 /* UserReactionMapper.swift */; };
+		B25D779024F3F55500B7BEB1 /* UserReactionLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D778F24F3F55500B7BEB1 /* UserReactionLocalStorage.swift */; };
+		B25D779224F3F58A00B7BEB1 /* TRPUserReactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D779124F3F58A00B7BEB1 /* TRPUserReactionRepository.swift */; };
+		B25D779524F3FE1E00B7BEB1 /* UserReactionUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D779424F3FE1E00B7BEB1 /* UserReactionUseCases.swift */; };
+		B25D779724F3FF1A00B7BEB1 /* TRPUserReactionUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D779624F3FF1A00B7BEB1 /* TRPUserReactionUseCases.swift */; };
+		B25D77A824F494E200B7BEB1 /* TRPReservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77A724F494E200B7BEB1 /* TRPReservation.swift */; };
+		B25D77AA24F4951B00B7BEB1 /* ReservationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77A924F4951B00B7BEB1 /* ReservationMapper.swift */; };
+		B25D77AC24F4952300B7BEB1 /* TRPYelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77AB24F4952300B7BEB1 /* TRPYelp.swift */; };
+		B25D77AE24F4958700B7BEB1 /* YelpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77AD24F4958700B7BEB1 /* YelpMapper.swift */; };
+		B25D77B024F496EC00B7BEB1 /* ReservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77AF24F496EC00B7BEB1 /* ReservationRepository.swift */; };
+		B25D77B324F4984700B7BEB1 /* ReservationRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77B224F4984700B7BEB1 /* ReservationRemoteApi.swift */; };
+		B25D77B524F4987E00B7BEB1 /* TRPReservationRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77B424F4987E00B7BEB1 /* TRPReservationRemoteApi.swift */; };
+		B25D77B724F499D900B7BEB1 /* TRPReservationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77B624F499D900B7BEB1 /* TRPReservationRepository.swift */; };
+		B25D77BC24F49A3F00B7BEB1 /* UserReservationLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25D77BB24F49A3F00B7BEB1 /* UserReservationLocalStorage.swift */; };
+		B25EC98D259CB9110027AF50 /* TRPGyg.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25EC98C259CB9110027AF50 /* TRPGyg.swift */; };
+		B25EC992259CB93D0027AF50 /* GYGMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25EC991259CB93D0027AF50 /* GYGMapper.swift */; };
+		B26444FC24D2ECE5000BDD14 /* TRPQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26444FB24D2ECE5000BDD14 /* TRPQuestion.swift */; };
+		B264450424D2ED81000BDD14 /* QuestionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264450324D2ED81000BDD14 /* QuestionMapper.swift */; };
+		B264450824D2F1AF000BDD14 /* TRPQuestionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264450724D2F1AF000BDD14 /* TRPQuestionsRepository.swift */; };
+		B264450A24D2F3B3000BDD14 /* QuestionRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264450924D2F3B3000BDD14 /* QuestionRemoteApi.swift */; };
+		B264450C24D2F3E7000BDD14 /* TRPQuestionRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264450B24D2F3E7000BDD14 /* TRPQuestionRemoteApi.swift */; };
+		B264450E24D2F659000BDD14 /* QuestionLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264450D24D2F659000BDD14 /* QuestionLocalStorage.swift */; };
+		B264451024D2F674000BDD14 /* TRPQuestionLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264450F24D2F674000BDD14 /* TRPQuestionLocalStorage.swift */; };
+		B264451324D2F8A6000BDD14 /* QuestionUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264451224D2F8A6000BDD14 /* QuestionUseCases.swift */; };
+		B266F8D324EAACD5008BB856 /* PoiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8D224EAACD5008BB856 /* PoiRepository.swift */; };
+		B266F8D624EAB103008BB856 /* PoiRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8D524EAB103008BB856 /* PoiRemoteApi.swift */; };
+		B266F8D824EAB132008BB856 /* TRPRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8D724EAB132008BB856 /* TRPRemoteApi.swift */; };
+		B266F8DB24EAB2FE008BB856 /* PoiLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8DA24EAB2FE008BB856 /* PoiLocalStorage.swift */; };
+		B266F8DD24EAB33B008BB856 /* TRPPoiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8DC24EAB33B008BB856 /* TRPPoiRepository.swift */; };
+		B266F8DF24EAB488008BB856 /* PoiParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8DE24EAB488008BB856 /* PoiParameters.swift */; };
+		B266F8E224EAB80E008BB856 /* PoiUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8E124EAB80E008BB856 /* PoiUseCases.swift */; };
+		B266F8E424EABC08008BB856 /* TRPPoiUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8E324EABC08008BB856 /* TRPPoiUseCases.swift */; };
+		B266F8E824EBC386008BB856 /* TRPPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8E724EBC386008BB856 /* TRPPagination.swift */; };
+		B266F8EC24EBC3FC008BB856 /* PaginationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8EB24EBC3FC008BB856 /* PaginationMapper.swift */; };
+		B266F8EE24EBC68F008BB856 /* PaginationWithData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B266F8ED24EBC68F008BB856 /* PaginationWithData.swift */; };
+		B26CA65B24FF53C700805EB7 /* ReservationUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CA65A24FF53C700805EB7 /* ReservationUseCases.swift */; };
+		B26CA65D24FF558600805EB7 /* TRPReservationUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CA65C24FF558600805EB7 /* TRPReservationUseCases.swift */; };
+		B26DB0DE24DC4140006D0206 /* TRPPace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DB0DD24DC4140006D0206 /* TRPPace.swift */; };
+		B26DB0EE24DC448C006D0206 /* TRPAccommodation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DB0ED24DC448C006D0206 /* TRPAccommodation.swift */; };
+		B26DB0F624DC44C0006D0206 /* AccommondationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DB0F524DC44C0006D0206 /* AccommondationMapper.swift */; };
+		B27FE2D024EC12A700A8F221 /* AlternativePoiUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27FE2CF24EC12A700A8F221 /* AlternativePoiUseCase.swift */; };
+		B2810FEB250108030097A97B /* ObserveTripEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2810FEA250108030097A97B /* ObserveTripEventStatus.swift */; };
+		B283644D24E6D1E5009198BD /* PlanGenerateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283644C24E6D1E5009198BD /* PlanGenerateController.swift */; };
+		B283645524E6D1FD009198BD /* DailyPlanRequestLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283645424E6D1FD009198BD /* DailyPlanRequestLoop.swift */; };
+		B283645624E6D258009198BD /* PlanGenerateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B283644C24E6D1E5009198BD /* PlanGenerateController.swift */; };
+		B285C0E924C9FF2E00356C6B /* TRPFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285C0E824C9FF2E00356C6B /* TRPFavorite.swift */; };
+		B2899BE324ED43CB0022B4FE /* TripAllDayUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2899BE224ED43CB0022B4FE /* TripAllDayUseCases.swift */; };
+		B2899BE524ED43FD0022B4FE /* TRPTripCheckAllPlanUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2899BE424ED43FD0022B4FE /* TRPTripCheckAllPlanUseCases.swift */; };
+		B2899BEF24ED4F790022B4FE /* TripGenerateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2899BEE24ED4F790022B4FE /* TripGenerateController.swift */; };
+		B28A2BEE24D0224B00E79D88 /* FetchFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2BED24D0224B00E79D88 /* FetchFavoriteUseCase.swift */; };
+		B28A2BF324D024EB00E79D88 /* TRPFavoriteUseCasesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2BF224D024EB00E79D88 /* TRPFavoriteUseCasesTest.swift */; };
+		B28A2BF524D025D500E79D88 /* FetchFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2BED24D0224B00E79D88 /* FetchFavoriteUseCase.swift */; };
+		B28A2BF624D0261E00E79D88 /* TRPFavoriteUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7979924CF12F400F79C06 /* TRPFavoriteUseCases.swift */; };
+		B28A2C1424D0286A00E79D88 /* FavoriteRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7978024CEBE0100F79C06 /* FavoriteRemoteApi.swift */; };
+		B28A2C1524D0287000E79D88 /* FavoriteLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7977E24CEBDEE00F79C06 /* FavoriteLocalStorage.swift */; };
+		B28A2C1624D0289100E79D88 /* TRPFavoriteRemoveApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7978224CEBE1200F79C06 /* TRPFavoriteRemoveApi.swift */; };
+		B28A2C1724D0289700E79D88 /* TRPFavoriteLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7977C24CEBDB300F79C06 /* TRPFavoriteLocalStorage.swift */; };
+		B28A2C1824D028A500E79D88 /* FavoriteMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7978824CEC5D700F79C06 /* FavoriteMapper.swift */; };
+		B28A2C3E24D049E300E79D88 /* ObserverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C3D24D049E300E79D88 /* ObserverController.swift */; };
+		B28A2C4024D07E2600E79D88 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C3F24D07E2600E79D88 /* CityRepository.swift */; };
+		B28A2C4224D07E3B00E79D88 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C4124D07E3B00E79D88 /* FavoriteRepository.swift */; };
+		B28A2C4624D090A000E79D88 /* TRPTaste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C4524D090A000E79D88 /* TRPTaste.swift */; };
+		B28A2C4824D090D000E79D88 /* TRPCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C4724D090D000E79D88 /* TRPCity.swift */; };
+		B28A2C4A24D0915A00E79D88 /* CityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C4924D0915A00E79D88 /* CityMapper.swift */; };
+		B28A2C5624D1563100E79D88 /* TasteMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C5524D1563100E79D88 /* TasteMapper.swift */; };
+		B28A2C6324D15A4D00E79D88 /* CityLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C6224D15A4D00E79D88 /* CityLocalStorage.swift */; };
+		B28A2C6524D15A6400E79D88 /* TRPCityLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C6424D15A6400E79D88 /* TRPCityLocalStorage.swift */; };
+		B28A2C6824D15A8200E79D88 /* CityRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C6724D15A8200E79D88 /* CityRemoteApi.swift */; };
+		B28A2C6A24D15AE900E79D88 /* TRPCityRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C6924D15AE900E79D88 /* TRPCityRemoteApi.swift */; };
+		B28A2C6D24D15D1600E79D88 /* TRPCityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C6C24D15D1600E79D88 /* TRPCityRepository.swift */; };
+		B28A2C6F24D161C100E79D88 /* CityUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C6E24D161C100E79D88 /* CityUseCases.swift */; };
+		B28A2C7124D1624200E79D88 /* TRPCityUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C7024D1624200E79D88 /* TRPCityUseCases.swift */; };
+		B28A2C7424D16C8B00E79D88 /* UserTripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C7324D16C8A00E79D88 /* UserTripRepository.swift */; };
+		B28A2C7624D174BD00E79D88 /* TRPUserTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C7524D174BD00E79D88 /* TRPUserTrip.swift */; };
+		B28A2C7824D174EC00E79D88 /* UserTripMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C7724D174EC00E79D88 /* UserTripMapper.swift */; };
+		B28A2C7A24D1750100E79D88 /* TRPTripProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C7924D1750100E79D88 /* TRPTripProfile.swift */; };
+		B28A2C7C24D1751300E79D88 /* TripProfileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C7B24D1751300E79D88 /* TripProfileMapper.swift */; };
+		B28A2C8124D1820A00E79D88 /* UserTripLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8024D1820A00E79D88 /* UserTripLocalStorage.swift */; };
+		B28A2C8324D1823100E79D88 /* TRPUserTripLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8224D1823100E79D88 /* TRPUserTripLocalStorage.swift */; };
+		B28A2C8524D1825D00E79D88 /* UserTripRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8424D1825D00E79D88 /* UserTripRemoteApi.swift */; };
+		B28A2C8724D1830000E79D88 /* TRPUserTripRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8624D1830000E79D88 /* TRPUserTripRemoteApi.swift */; };
+		B28A2C8924D1880400E79D88 /* TRPUserTripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8824D1880400E79D88 /* TRPUserTripRepository.swift */; };
+		B28A2C8B24D18BDF00E79D88 /* UserTripUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8A24D18BDF00E79D88 /* UserTripUseCases.swift */; };
+		B28A2C8D24D18C4B00E79D88 /* TRPUserTripUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8C24D18C4B00E79D88 /* TRPUserTripUseCases.swift */; };
+		B28A2C9024D1B9C800E79D88 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A2C8F24D1B9C800E79D88 /* Date+Extensions.swift */; };
+		B2B5968D276EE1900083318E /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5968C276EE1900083318E /* FileIO.swift */; };
+		B2B7977D24CEBDB300F79C06 /* TRPFavoriteLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7977C24CEBDB300F79C06 /* TRPFavoriteLocalStorage.swift */; };
+		B2B7977F24CEBDEE00F79C06 /* FavoriteLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7977E24CEBDEE00F79C06 /* FavoriteLocalStorage.swift */; };
+		B2B7978124CEBE0100F79C06 /* FavoriteRemoteApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7978024CEBE0100F79C06 /* FavoriteRemoteApi.swift */; };
+		B2B7978324CEBE1200F79C06 /* TRPFavoriteRemoveApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7978224CEBE1200F79C06 /* TRPFavoriteRemoveApi.swift */; };
+		B2B7978924CEC5D700F79C06 /* FavoriteMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7978824CEC5D700F79C06 /* FavoriteMapper.swift */; };
+		B2B7979024CF0CDF00F79C06 /* TRPFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = B285C0E824C9FF2E00356C6B /* TRPFavorite.swift */; };
+		B2B7979A24CF12F400F79C06 /* TRPFavoriteUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7979924CF12F400F79C06 /* TRPFavoriteUseCases.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B25D35C124C4F0020015F66C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B25D35AD24C4F0020015F66C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B25D35B524C4F0020015F66C;
+			remoteInfo = TRPDataLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B352F7E269672B200B7C314 /* TRPFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TRPFoundationKit.framework; path = ../TripianFrameworks/TRPFoundationKit.framework; sourceTree = "<group>"; };
+		6B542A492C5256DA00480273 /* TRPExportItinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPExportItinerary.swift; sourceTree = "<group>"; };
+		6B6A52B128BBAA2A003125ED /* OfferUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferUseCases.swift; sourceTree = "<group>"; };
+		6B6A52B328BBACAE003125ED /* TRPOfferUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPOfferUseCases.swift; sourceTree = "<group>"; };
+		6B6A52B528BBAD23003125ED /* OfferRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRepository.swift; sourceTree = "<group>"; };
+		6B6A52B728BBAF08003125ED /* TRPOfferRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPOfferRepository.swift; sourceTree = "<group>"; };
+		6B6A52BA28BBAF37003125ED /* OfferRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferRemoteApi.swift; sourceTree = "<group>"; };
+		6B6A52BC28BBAF98003125ED /* TRPOfferRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPOfferRemoteApi.swift; sourceTree = "<group>"; };
+		6B978BE72697AC1A008DFDFF /* TRPRestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TRPRestKit.framework; path = ../TripianFrameworks/TRPRestKit.framework; sourceTree = "<group>"; };
+		6BA6C5E628A2FF7900E2DB69 /* TRPOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPOffer.swift; sourceTree = "<group>"; };
+		6BA6C5E828A2FFE900E2DB69 /* TRPOfferProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPOfferProductType.swift; sourceTree = "<group>"; };
+		6BA6C5EA28A3009100E2DB69 /* TRPOfferTimeFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPOfferTimeFrame.swift; sourceTree = "<group>"; };
+		6BA6C5EC28A301AE00E2DB69 /* OfferMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferMapper.swift; sourceTree = "<group>"; };
+		6BA6C5EE28A319E400E2DB69 /* OfferProductTypeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferProductTypeMapper.swift; sourceTree = "<group>"; };
+		6BA6C5F028A31ADD00E2DB69 /* OfferTimeFrameMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTimeFrameMapper.swift; sourceTree = "<group>"; };
+		6BC19C2327BF8A2700696348 /* TRPPreGeneratedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPreGeneratedTheme.swift; sourceTree = "<group>"; };
+		6BED465C2C8DD833008B067A /* TRPLanguagesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPLanguagesUseCases.swift; sourceTree = "<group>"; };
+		6BED46612C8DD87F008B067A /* TRPLanguagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPLanguagesRepository.swift; sourceTree = "<group>"; };
+		6BED46632C8DD89B008B067A /* LanguagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesRepository.swift; sourceTree = "<group>"; };
+		6BED46652C8DD905008B067A /* TRPLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPLanguage.swift; sourceTree = "<group>"; };
+		6BED46672C8DDB2E008B067A /* FetchLanguagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLanguagesUseCase.swift; sourceTree = "<group>"; };
+		B20667912781833600988D8F /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B2066794278183AD00988D8F /* ReachabilityUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityUseCases.swift; sourceTree = "<group>"; };
+		B247773124D2E39200A255A9 /* QuestionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRepository.swift; sourceTree = "<group>"; };
+		B257553324E3E67500FF1039 /* StepUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepUseCase.swift; sourceTree = "<group>"; };
+		B257553824E3EB2F00FF1039 /* TRPTripModeUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTripModeUseCases.swift; sourceTree = "<group>"; };
+		B257553B24E3ECD200FF1039 /* TripUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripUseCases.swift; sourceTree = "<group>"; };
+		B257554024E3FDB400FF1039 /* StepRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepRepository.swift; sourceTree = "<group>"; };
+		B257554224E3FF8500FF1039 /* TRPStepRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPStepRepository.swift; sourceTree = "<group>"; };
+		B257554524E3FFAA00FF1039 /* StepRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepRemoteApi.swift; sourceTree = "<group>"; };
+		B257554724E3FFC500FF1039 /* TRPStepRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPStepRemoteApi.swift; sourceTree = "<group>"; };
+		B257554E24E4069D00FF1039 /* PlanRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanRepository.swift; sourceTree = "<group>"; };
+		B257555124E4076C00FF1039 /* PlanRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanRemoteApi.swift; sourceTree = "<group>"; };
+		B257555324E4078000FF1039 /* TRPPlanRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPlanRemoteApi.swift; sourceTree = "<group>"; };
+		B257555524E409F500FF1039 /* TRPPlanRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPlanRepository.swift; sourceTree = "<group>"; };
+		B257555824E40BF200FF1039 /* TripModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModelRepository.swift; sourceTree = "<group>"; };
+		B257555A24E40C0800FF1039 /* TRPTripModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTripModelRepository.swift; sourceTree = "<group>"; };
+		B257555D24E4163000FF1039 /* PlanUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanUseCases.swift; sourceTree = "<group>"; };
+		B257556024E41E2700FF1039 /* TripModelUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModelUseCases.swift; sourceTree = "<group>"; };
+		B257556224E4235A00FF1039 /* TRPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPImage.swift; sourceTree = "<group>"; };
+		B257556424E4236F00FF1039 /* TRPImageOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPImageOwner.swift; sourceTree = "<group>"; };
+		B257556624E4239900FF1039 /* ImageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMapper.swift; sourceTree = "<group>"; };
+		B257556A24E4268600FF1039 /* TRPCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCategory.swift; sourceTree = "<group>"; };
+		B257556C24E426DE00FF1039 /* TRPBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPBooking.swift; sourceTree = "<group>"; };
+		B259F34924E524B500358AFB /* BookingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMapper.swift; sourceTree = "<group>"; };
+		B259F35124E526B500358AFB /* CategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMapper.swift; sourceTree = "<group>"; };
+		B25A583924D9418200102FC5 /* TRPQuestionUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPQuestionUseCases.swift; sourceTree = "<group>"; };
+		B25A584424D9807A00102FC5 /* UserInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRepository.swift; sourceTree = "<group>"; };
+		B25A584624D981DF00102FC5 /* TRPUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUser.swift; sourceTree = "<group>"; };
+		B25A584824D9822000102FC5 /* TRPUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserProfile.swift; sourceTree = "<group>"; };
+		B25A584D24D9829D00102FC5 /* UserMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
+		B25A584F24D982E100102FC5 /* UserProfileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileMapper.swift; sourceTree = "<group>"; };
+		B25A585224D9840F00102FC5 /* UserInfoRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRemoteApi.swift; sourceTree = "<group>"; };
+		B25A585424D9843F00102FC5 /* TRPUserInfoRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserInfoRemoteApi.swift; sourceTree = "<group>"; };
+		B25A585724D9852F00102FC5 /* UserInfoLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoLocalStorage.swift; sourceTree = "<group>"; };
+		B25A585924D9854600102FC5 /* TRPUserInfoLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserInfoLocalStorage.swift; sourceTree = "<group>"; };
+		B25A585B24D9856600102FC5 /* TRPUserInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserInfoRepository.swift; sourceTree = "<group>"; };
+		B25A585D24D9873B00102FC5 /* UserInfoUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoUseCases.swift; sourceTree = "<group>"; };
+		B25A585F24D9947700102FC5 /* TRPUserInfoUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserInfoUseCases.swift; sourceTree = "<group>"; };
+		B25A586224D9C9DD00102FC5 /* TRPCompanion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCompanion.swift; sourceTree = "<group>"; };
+		B25A586424D9CA0800102FC5 /* CompanionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionMapper.swift; sourceTree = "<group>"; };
+		B25A586624D9CB2B00102FC5 /* CompanionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionRepository.swift; sourceTree = "<group>"; };
+		B25A586924D9CD8E00102FC5 /* CompanionRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionRemoteApi.swift; sourceTree = "<group>"; };
+		B25A586B24D9CDC800102FC5 /* TRPCompanionRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCompanionRemoteApi.swift; sourceTree = "<group>"; };
+		B25A586E24D9CF7300102FC5 /* CompanionLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionLocalStorage.swift; sourceTree = "<group>"; };
+		B25A587024D9CFE100102FC5 /* TRPCompanionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCompanionRepository.swift; sourceTree = "<group>"; };
+		B25A587324D9F3F200102FC5 /* CompanionUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionUseCases.swift; sourceTree = "<group>"; };
+		B25A587524D9F67500102FC5 /* TRPCompanionUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCompanionUseCases.swift; sourceTree = "<group>"; };
+		B25A587924DACF9900102FC5 /* TRPTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTrip.swift; sourceTree = "<group>"; };
+		B25A587B24DAD74200102FC5 /* TripMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapper.swift; sourceTree = "<group>"; };
+		B25A587D24DAD9DB00102FC5 /* TRPPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPlan.swift; sourceTree = "<group>"; };
+		B25A587F24DADA1500102FC5 /* TRPStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPStep.swift; sourceTree = "<group>"; };
+		B25A588124DADA3500102FC5 /* TRPPoi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPoi.swift; sourceTree = "<group>"; };
+		B25A588324DADA8000102FC5 /* PlanMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanMapper.swift; sourceTree = "<group>"; };
+		B25A588524DADBB200102FC5 /* StepMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepMapper.swift; sourceTree = "<group>"; };
+		B25A588724DADBFD00102FC5 /* PoiMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiMapper.swift; sourceTree = "<group>"; };
+		B25A588C24DAFEE000102FC5 /* TripRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRemoteApi.swift; sourceTree = "<group>"; };
+		B25A588E24DAFEF200102FC5 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
+		B25A589424DB041600102FC5 /* TRPTripRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTripRemoteApi.swift; sourceTree = "<group>"; };
+		B25A58A524DB9D7C00102FC5 /* TripLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripLocalStorage.swift; sourceTree = "<group>"; };
+		B25A58A724DB9D9B00102FC5 /* TRPTripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTripRepository.swift; sourceTree = "<group>"; };
+		B25A58AB24DBA06500102FC5 /* TRPCreateTripUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCreateTripUseCase.swift; sourceTree = "<group>"; };
+		B25A58B224DBA3EE00102FC5 /* TRPEditTripUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPEditTripUseCases.swift; sourceTree = "<group>"; };
+		B25AE09724F7D3770093DDF2 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		B25AE0B324F93C980093DDF2 /* LastSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSearchRepository.swift; sourceTree = "<group>"; };
+		B25AE0B524F93E930093DDF2 /* TRPLastSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPLastSearchRepository.swift; sourceTree = "<group>"; };
+		B25AE0B824F93F420093DDF2 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		B25AE0BB24F944470093DDF2 /* LastSearchUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSearchUseCases.swift; sourceTree = "<group>"; };
+		B25AE0BD24F944B80093DDF2 /* TRPLastSearchUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPLastSearchUseCases.swift; sourceTree = "<group>"; };
+		B25D35B624C4F0020015F66C /* TRPDataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TRPDataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25D35B924C4F0020015F66C /* TRPDataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRPDataLayer.h; sourceTree = "<group>"; };
+		B25D35BA24C4F0020015F66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25D35BF24C4F0020015F66C /* TRPDataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRPDataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25D35C424C4F0020015F66C /* TRPDataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPDataLayerTests.swift; sourceTree = "<group>"; };
+		B25D35C624C4F0020015F66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25D35DF24C4F1610015F66C /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		B25D35E224C4F1D30015F66C /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		B25D35EA24C4F2620015F66C /* ValueObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObserver.swift; sourceTree = "<group>"; };
+		B25D35EC24C4F2970015F66C /* TRPFavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPFavoriteRepository.swift; sourceTree = "<group>"; };
+		B25D777F24F3E16B00B7BEB1 /* UserReactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReactionRepository.swift; sourceTree = "<group>"; };
+		B25D778124F3E1A500B7BEB1 /* TRPUserReaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserReaction.swift; sourceTree = "<group>"; };
+		B25D778324F3E1E200B7BEB1 /* TRPUserReactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserReactionType.swift; sourceTree = "<group>"; };
+		B25D778624F3E7D600B7BEB1 /* UserReactionRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReactionRemoteApi.swift; sourceTree = "<group>"; };
+		B25D778824F3E7E700B7BEB1 /* TRPUserReactionRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserReactionRemoteApi.swift; sourceTree = "<group>"; };
+		B25D778A24F3E87200B7BEB1 /* UserReactionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReactionMapper.swift; sourceTree = "<group>"; };
+		B25D778F24F3F55500B7BEB1 /* UserReactionLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReactionLocalStorage.swift; sourceTree = "<group>"; };
+		B25D779124F3F58A00B7BEB1 /* TRPUserReactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserReactionRepository.swift; sourceTree = "<group>"; };
+		B25D779424F3FE1E00B7BEB1 /* UserReactionUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReactionUseCases.swift; sourceTree = "<group>"; };
+		B25D779624F3FF1A00B7BEB1 /* TRPUserReactionUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserReactionUseCases.swift; sourceTree = "<group>"; };
+		B25D77A724F494E200B7BEB1 /* TRPReservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPReservation.swift; sourceTree = "<group>"; };
+		B25D77A924F4951B00B7BEB1 /* ReservationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationMapper.swift; sourceTree = "<group>"; };
+		B25D77AB24F4952300B7BEB1 /* TRPYelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPYelp.swift; sourceTree = "<group>"; };
+		B25D77AD24F4958700B7BEB1 /* YelpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpMapper.swift; sourceTree = "<group>"; };
+		B25D77AF24F496EC00B7BEB1 /* ReservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationRepository.swift; sourceTree = "<group>"; };
+		B25D77B224F4984700B7BEB1 /* ReservationRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationRemoteApi.swift; sourceTree = "<group>"; };
+		B25D77B424F4987E00B7BEB1 /* TRPReservationRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPReservationRemoteApi.swift; sourceTree = "<group>"; };
+		B25D77B624F499D900B7BEB1 /* TRPReservationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPReservationRepository.swift; sourceTree = "<group>"; };
+		B25D77BB24F49A3F00B7BEB1 /* UserReservationLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReservationLocalStorage.swift; sourceTree = "<group>"; };
+		B25EC98C259CB9110027AF50 /* TRPGyg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPGyg.swift; sourceTree = "<group>"; };
+		B25EC991259CB93D0027AF50 /* GYGMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYGMapper.swift; sourceTree = "<group>"; };
+		B26444FB24D2ECE5000BDD14 /* TRPQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPQuestion.swift; sourceTree = "<group>"; };
+		B264450324D2ED81000BDD14 /* QuestionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMapper.swift; sourceTree = "<group>"; };
+		B264450724D2F1AF000BDD14 /* TRPQuestionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPQuestionsRepository.swift; sourceTree = "<group>"; };
+		B264450924D2F3B3000BDD14 /* QuestionRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRemoteApi.swift; sourceTree = "<group>"; };
+		B264450B24D2F3E7000BDD14 /* TRPQuestionRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPQuestionRemoteApi.swift; sourceTree = "<group>"; };
+		B264450D24D2F659000BDD14 /* QuestionLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLocalStorage.swift; sourceTree = "<group>"; };
+		B264450F24D2F674000BDD14 /* TRPQuestionLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPQuestionLocalStorage.swift; sourceTree = "<group>"; };
+		B264451224D2F8A6000BDD14 /* QuestionUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUseCases.swift; sourceTree = "<group>"; };
+		B266F8D224EAACD5008BB856 /* PoiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiRepository.swift; sourceTree = "<group>"; };
+		B266F8D524EAB103008BB856 /* PoiRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiRemoteApi.swift; sourceTree = "<group>"; };
+		B266F8D724EAB132008BB856 /* TRPRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPRemoteApi.swift; sourceTree = "<group>"; };
+		B266F8DA24EAB2FE008BB856 /* PoiLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiLocalStorage.swift; sourceTree = "<group>"; };
+		B266F8DC24EAB33B008BB856 /* TRPPoiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPoiRepository.swift; sourceTree = "<group>"; };
+		B266F8DE24EAB488008BB856 /* PoiParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiParameters.swift; sourceTree = "<group>"; };
+		B266F8E124EAB80E008BB856 /* PoiUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiUseCases.swift; sourceTree = "<group>"; };
+		B266F8E324EABC08008BB856 /* TRPPoiUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPoiUseCases.swift; sourceTree = "<group>"; };
+		B266F8E724EBC386008BB856 /* TRPPagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPagination.swift; sourceTree = "<group>"; };
+		B266F8EB24EBC3FC008BB856 /* PaginationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationMapper.swift; sourceTree = "<group>"; };
+		B266F8ED24EBC68F008BB856 /* PaginationWithData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationWithData.swift; sourceTree = "<group>"; };
+		B26CA65A24FF53C700805EB7 /* ReservationUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationUseCases.swift; sourceTree = "<group>"; };
+		B26CA65C24FF558600805EB7 /* TRPReservationUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPReservationUseCases.swift; sourceTree = "<group>"; };
+		B26DB0DD24DC4140006D0206 /* TRPPace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPPace.swift; sourceTree = "<group>"; };
+		B26DB0ED24DC448C006D0206 /* TRPAccommodation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPAccommodation.swift; sourceTree = "<group>"; };
+		B26DB0F524DC44C0006D0206 /* AccommondationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccommondationMapper.swift; sourceTree = "<group>"; };
+		B27FE2CF24EC12A700A8F221 /* AlternativePoiUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativePoiUseCase.swift; sourceTree = "<group>"; };
+		B2810FEA250108030097A97B /* ObserveTripEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveTripEventStatus.swift; sourceTree = "<group>"; };
+		B283644C24E6D1E5009198BD /* PlanGenerateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanGenerateController.swift; sourceTree = "<group>"; };
+		B283645424E6D1FD009198BD /* DailyPlanRequestLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlanRequestLoop.swift; sourceTree = "<group>"; };
+		B285C0E824C9FF2E00356C6B /* TRPFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPFavorite.swift; sourceTree = "<group>"; };
+		B2899BE224ED43CB0022B4FE /* TripAllDayUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripAllDayUseCases.swift; sourceTree = "<group>"; };
+		B2899BE424ED43FD0022B4FE /* TRPTripCheckAllPlanUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTripCheckAllPlanUseCases.swift; sourceTree = "<group>"; };
+		B2899BEE24ED4F790022B4FE /* TripGenerateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripGenerateController.swift; sourceTree = "<group>"; };
+		B28A2BED24D0224B00E79D88 /* FetchFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFavoriteUseCase.swift; sourceTree = "<group>"; };
+		B28A2BF224D024EB00E79D88 /* TRPFavoriteUseCasesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPFavoriteUseCasesTest.swift; sourceTree = "<group>"; };
+		B28A2C3D24D049E300E79D88 /* ObserverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverController.swift; sourceTree = "<group>"; };
+		B28A2C3F24D07E2600E79D88 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		B28A2C4124D07E3B00E79D88 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		B28A2C4524D090A000E79D88 /* TRPTaste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTaste.swift; sourceTree = "<group>"; };
+		B28A2C4724D090D000E79D88 /* TRPCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCity.swift; sourceTree = "<group>"; };
+		B28A2C4924D0915A00E79D88 /* CityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityMapper.swift; sourceTree = "<group>"; };
+		B28A2C5524D1563100E79D88 /* TasteMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteMapper.swift; sourceTree = "<group>"; };
+		B28A2C6224D15A4D00E79D88 /* CityLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLocalStorage.swift; sourceTree = "<group>"; };
+		B28A2C6424D15A6400E79D88 /* TRPCityLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCityLocalStorage.swift; sourceTree = "<group>"; };
+		B28A2C6724D15A8200E79D88 /* CityRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRemoteApi.swift; sourceTree = "<group>"; };
+		B28A2C6924D15AE900E79D88 /* TRPCityRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCityRemoteApi.swift; sourceTree = "<group>"; };
+		B28A2C6C24D15D1600E79D88 /* TRPCityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCityRepository.swift; sourceTree = "<group>"; };
+		B28A2C6E24D161C100E79D88 /* CityUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityUseCases.swift; sourceTree = "<group>"; };
+		B28A2C7024D1624200E79D88 /* TRPCityUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPCityUseCases.swift; sourceTree = "<group>"; };
+		B28A2C7324D16C8A00E79D88 /* UserTripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripRepository.swift; sourceTree = "<group>"; };
+		B28A2C7524D174BD00E79D88 /* TRPUserTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserTrip.swift; sourceTree = "<group>"; };
+		B28A2C7724D174EC00E79D88 /* UserTripMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripMapper.swift; sourceTree = "<group>"; };
+		B28A2C7924D1750100E79D88 /* TRPTripProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPTripProfile.swift; sourceTree = "<group>"; };
+		B28A2C7B24D1751300E79D88 /* TripProfileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripProfileMapper.swift; sourceTree = "<group>"; };
+		B28A2C8024D1820A00E79D88 /* UserTripLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripLocalStorage.swift; sourceTree = "<group>"; };
+		B28A2C8224D1823100E79D88 /* TRPUserTripLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserTripLocalStorage.swift; sourceTree = "<group>"; };
+		B28A2C8424D1825D00E79D88 /* UserTripRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripRemoteApi.swift; sourceTree = "<group>"; };
+		B28A2C8624D1830000E79D88 /* TRPUserTripRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserTripRemoteApi.swift; sourceTree = "<group>"; };
+		B28A2C8824D1880400E79D88 /* TRPUserTripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserTripRepository.swift; sourceTree = "<group>"; };
+		B28A2C8A24D18BDF00E79D88 /* UserTripUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTripUseCases.swift; sourceTree = "<group>"; };
+		B28A2C8C24D18C4B00E79D88 /* TRPUserTripUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPUserTripUseCases.swift; sourceTree = "<group>"; };
+		B28A2C8F24D1B9C800E79D88 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B2B5968C276EE1900083318E /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		B2B7977C24CEBDB300F79C06 /* TRPFavoriteLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPFavoriteLocalStorage.swift; sourceTree = "<group>"; };
+		B2B7977E24CEBDEE00F79C06 /* FavoriteLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalStorage.swift; sourceTree = "<group>"; };
+		B2B7978024CEBE0100F79C06 /* FavoriteRemoteApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRemoteApi.swift; sourceTree = "<group>"; };
+		B2B7978224CEBE1200F79C06 /* TRPFavoriteRemoveApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPFavoriteRemoveApi.swift; sourceTree = "<group>"; };
+		B2B7978824CEC5D700F79C06 /* FavoriteMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMapper.swift; sourceTree = "<group>"; };
+		B2B7979924CF12F400F79C06 /* TRPFavoriteUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRPFavoriteUseCases.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B25D35B324C4F0020015F66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B547150271EEFE100DD4F72 /* TRPRestKit.framework in Frameworks */,
+				6B978B9F26967C00008DFDFF /* TRPFoundationKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25D35BC24C4F0020015F66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D35C024C4F0020015F66C /* TRPDataLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B6A52AF28BBA924003125ED /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A52B528BBAD23003125ED /* OfferRepository.swift */,
+				6B6A52B728BBAF08003125ED /* TRPOfferRepository.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		6B6A52B028BBA9F7003125ED /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A52B128BBAA2A003125ED /* OfferUseCases.swift */,
+				6B6A52B328BBACAE003125ED /* TRPOfferUseCases.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		6B6A52B928BBAF25003125ED /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				6B6A52BA28BBAF37003125ED /* OfferRemoteApi.swift */,
+				6B6A52BC28BBAF98003125ED /* TRPOfferRemoteApi.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		6BED465B2C8DD822008B067A /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				6BED465C2C8DD833008B067A /* TRPLanguagesUseCases.swift */,
+				6BED46672C8DDB2E008B067A /* FetchLanguagesUseCase.swift */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		6BED46602C8DD869008B067A /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				6BED46612C8DD87F008B067A /* TRPLanguagesRepository.swift */,
+				6BED46632C8DD89B008B067A /* LanguagesRepository.swift */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		B20667932781839400988D8F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B2066794278183AD00988D8F /* ReachabilityUseCases.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B247772A24D2E2AC00A255A9 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				B247773124D2E39200A255A9 /* QuestionsRepository.swift */,
+				B264450724D2F1AF000BDD14 /* TRPQuestionsRepository.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		B257552C24E3E5B900FF1039 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				B257553324E3E67500FF1039 /* StepUseCase.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		B257553524E3EAEC00FF1039 /* TripMode */ = {
+			isa = PBXGroup;
+			children = (
+				B257553824E3EB2F00FF1039 /* TRPTripModeUseCases.swift */,
+				B283644C24E6D1E5009198BD /* PlanGenerateController.swift */,
+			);
+			path = TripMode;
+			sourceTree = "<group>";
+		};
+		B257553A24E3EC1300FF1039 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				B257553B24E3ECD200FF1039 /* TripUseCases.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		B257553F24E3FCFE00FF1039 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				B257554024E3FDB400FF1039 /* StepRepository.swift */,
+				B257554224E3FF8500FF1039 /* TRPStepRepository.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		B257554424E3FF9400FF1039 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				B257554524E3FFAA00FF1039 /* StepRemoteApi.swift */,
+				B257554724E3FFC500FF1039 /* TRPStepRemoteApi.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		B257554D24E405D700FF1039 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				B257554E24E4069D00FF1039 /* PlanRepository.swift */,
+				B257555524E409F500FF1039 /* TRPPlanRepository.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		B257555024E4075B00FF1039 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				B257555124E4076C00FF1039 /* PlanRemoteApi.swift */,
+				B257555324E4078000FF1039 /* TRPPlanRemoteApi.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		B257555724E40BE200FF1039 /* TripModel */ = {
+			isa = PBXGroup;
+			children = (
+				B257555824E40BF200FF1039 /* TripModelRepository.swift */,
+				B257555A24E40C0800FF1039 /* TRPTripModelRepository.swift */,
+			);
+			path = TripModel;
+			sourceTree = "<group>";
+		};
+		B257555C24E4161E00FF1039 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				B257555D24E4163000FF1039 /* PlanUseCases.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		B257555F24E41C6000FF1039 /* TripModel */ = {
+			isa = PBXGroup;
+			children = (
+				B257556024E41E2700FF1039 /* TripModelUseCases.swift */,
+			);
+			path = TripModel;
+			sourceTree = "<group>";
+		};
+		B25A584124D97F7800102FC5 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B25A585D24D9873B00102FC5 /* UserInfoUseCases.swift */,
+				B25A585F24D9947700102FC5 /* TRPUserInfoUseCases.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B25A584324D97FF100102FC5 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B25A584424D9807A00102FC5 /* UserInfoRepository.swift */,
+				B25A585B24D9856600102FC5 /* TRPUserInfoRepository.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B25A585124D983FB00102FC5 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B25A585224D9840F00102FC5 /* UserInfoRemoteApi.swift */,
+				B25A585424D9843F00102FC5 /* TRPUserInfoRemoteApi.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B25A585624D9852100102FC5 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B25A585724D9852F00102FC5 /* UserInfoLocalStorage.swift */,
+				B25A585924D9854600102FC5 /* TRPUserInfoLocalStorage.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		B25A586124D9C97400102FC5 /* Companion */ = {
+			isa = PBXGroup;
+			children = (
+				B25A586624D9CB2B00102FC5 /* CompanionRepository.swift */,
+				B25A587024D9CFE100102FC5 /* TRPCompanionRepository.swift */,
+			);
+			path = Companion;
+			sourceTree = "<group>";
+		};
+		B25A586824D9CD7500102FC5 /* Companion */ = {
+			isa = PBXGroup;
+			children = (
+				B25A586924D9CD8E00102FC5 /* CompanionRemoteApi.swift */,
+				B25A586B24D9CDC800102FC5 /* TRPCompanionRemoteApi.swift */,
+			);
+			path = Companion;
+			sourceTree = "<group>";
+		};
+		B25A586D24D9CF5F00102FC5 /* Companion */ = {
+			isa = PBXGroup;
+			children = (
+				B25A586E24D9CF7300102FC5 /* CompanionLocalStorage.swift */,
+			);
+			path = Companion;
+			sourceTree = "<group>";
+		};
+		B25A587224D9D15800102FC5 /* Companion */ = {
+			isa = PBXGroup;
+			children = (
+				B25A587324D9F3F200102FC5 /* CompanionUseCases.swift */,
+				B25A587524D9F67500102FC5 /* TRPCompanionUseCases.swift */,
+			);
+			path = Companion;
+			sourceTree = "<group>";
+		};
+		B25A588924DAFE9700102FC5 /* CreateTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B25A58AB24DBA06500102FC5 /* TRPCreateTripUseCase.swift */,
+			);
+			path = CreateTrip;
+			sourceTree = "<group>";
+		};
+		B25A588A24DAFEA100102FC5 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				B25A588E24DAFEF200102FC5 /* TripRepository.swift */,
+				B25A58A724DB9D9B00102FC5 /* TRPTripRepository.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		B25A588B24DAFEC900102FC5 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				B25A588C24DAFEE000102FC5 /* TripRemoteApi.swift */,
+				B25A589424DB041600102FC5 /* TRPTripRemoteApi.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		B25A589E24DB9D6100102FC5 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				B25A58A524DB9D7C00102FC5 /* TripLocalStorage.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		B25A58AF24DBA3B700102FC5 /* EditTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B25A58B224DBA3EE00102FC5 /* TRPEditTripUseCases.swift */,
+			);
+			path = EditTrip;
+			sourceTree = "<group>";
+		};
+		B25AE0AC24F93C870093DDF2 /* LastSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B25AE0B324F93C980093DDF2 /* LastSearchRepository.swift */,
+				B25AE0B524F93E930093DDF2 /* TRPLastSearchRepository.swift */,
+			);
+			path = LastSearch;
+			sourceTree = "<group>";
+		};
+		B25AE0B724F93F270093DDF2 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				B25AE0B824F93F420093DDF2 /* Storage.swift */,
+				B2B5968C276EE1900083318E /* FileIO.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		B25AE0BA24F944200093DDF2 /* LastSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B25AE0BB24F944470093DDF2 /* LastSearchUseCases.swift */,
+				B25AE0BD24F944B80093DDF2 /* TRPLastSearchUseCases.swift */,
+			);
+			path = LastSearch;
+			sourceTree = "<group>";
+		};
+		B25D35AC24C4F0020015F66C = {
+			isa = PBXGroup;
+			children = (
+				B25D35B824C4F0020015F66C /* TRPDataLayer */,
+				B25D35C324C4F0020015F66C /* TRPDataLayerTests */,
+				B25D35B724C4F0020015F66C /* Products */,
+				B285C0BF24C9D0B500356C6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B25D35B724C4F0020015F66C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B25D35B624C4F0020015F66C /* TRPDataLayer.framework */,
+				B25D35BF24C4F0020015F66C /* TRPDataLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B25D35B824C4F0020015F66C /* TRPDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C8E24D1B9BA00E79D88 /* Extensions */,
+				B25D35E924C4F2520015F66C /* Utilities */,
+				B25D35DE24C4F1530015F66C /* Common */,
+				B25D35D824C4F0F50015F66C /* Domain */,
+				B25D35D924C4F0FB0015F66C /* Data */,
+				B25D35B924C4F0020015F66C /* TRPDataLayer.h */,
+				B25D35BA24C4F0020015F66C /* Info.plist */,
+			);
+			path = TRPDataLayer;
+			sourceTree = "<group>";
+		};
+		B25D35C324C4F0020015F66C /* TRPDataLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B25D35F324C4F42C0015F66C /* Data */,
+				B25D35F224C4F4220015F66C /* Domain */,
+				B25D35C424C4F0020015F66C /* TRPDataLayerTests.swift */,
+				B25D35C624C4F0020015F66C /* Info.plist */,
+			);
+			path = TRPDataLayerTests;
+			sourceTree = "<group>";
+		};
+		B25D35D824C4F0F50015F66C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B285C0E724C9FF2200356C6B /* Models */,
+				B25D35DB24C4F10B0015F66C /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B25D35D924C4F0FB0015F66C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B25D35DC24C4F1130015F66C /* Repositories */,
+				B285C0E224C9FB3600356C6B /* RemoteApi */,
+				B25AE0B724F93F270093DDF2 /* UserDefaults */,
+				B25D35DD24C4F11D0015F66C /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B25D35DB24C4F10B0015F66C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6BED465B2C8DD822008B067A /* Languages */,
+				B20667932781839400988D8F /* Reachability */,
+				B2810FE3250107F50097A97B /* EventStatus */,
+				B26CA65324FF53A100805EB7 /* UserReservation */,
+				B25AE0BA24F944200093DDF2 /* LastSearch */,
+				B25D779324F3FDF900B7BEB1 /* UserReaction */,
+				B2899BDB24ED43BC0022B4FE /* TripAllDay */,
+				B27FE2C824EC128C00A8F221 /* AlternativePoi */,
+				B266F8E024EAB7FF008BB856 /* Poi */,
+				B257553524E3EAEC00FF1039 /* TripMode */,
+				B257553A24E3EC1300FF1039 /* Trip */,
+				B257555F24E41C6000FF1039 /* TripModel */,
+				B257555C24E4161E00FF1039 /* Plan */,
+				B257552C24E3E5B900FF1039 /* Step */,
+				B25A58AF24DBA3B700102FC5 /* EditTrip */,
+				B25A588924DAFE9700102FC5 /* CreateTrip */,
+				B25A587224D9D15800102FC5 /* Companion */,
+				B25A584124D97F7800102FC5 /* UserInfo */,
+				B264451124D2F88E000BDD14 /* Questions */,
+				B28A2C7D24D17BD800E79D88 /* UserTrip */,
+				B28A2C5D24D1588F00E79D88 /* City */,
+				B25D35FF24C4FE2A0015F66C /* Favorite */,
+				6B6A52B028BBA9F7003125ED /* Offers */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B25D35DC24C4F1130015F66C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6BED46602C8DD869008B067A /* Languages */,
+				B25AE0AC24F93C870093DDF2 /* LastSearch */,
+				B25D77A024F4936E00B7BEB1 /* Reservation */,
+				B25D777824F3E15500B7BEB1 /* UserReaction */,
+				B266F8CB24EAACB2008BB856 /* Poi */,
+				B257555724E40BE200FF1039 /* TripModel */,
+				B257554D24E405D700FF1039 /* Plan */,
+				B257553F24E3FCFE00FF1039 /* Step */,
+				B25A588A24DAFEA100102FC5 /* Trip */,
+				B25A586124D9C97400102FC5 /* Companion */,
+				B25A584324D97FF100102FC5 /* UserInfo */,
+				B247772A24D2E2AC00A255A9 /* Questions */,
+				B28A2C7224D168AE00E79D88 /* UserTrip */,
+				B28A2C6B24D15CBC00E79D88 /* City */,
+				B28A2C6024D159F700E79D88 /* Favorite */,
+				6B6A52AF28BBA924003125ED /* Offers */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B25D35DD24C4F11D0015F66C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B25D77B824F49A1C00B7BEB1 /* Reservation */,
+				B25D778C24F3F53000B7BEB1 /* UserReaction */,
+				B266F8D924EAB2ED008BB856 /* Poi */,
+				B25A589E24DB9D6100102FC5 /* Trip */,
+				B25A586D24D9CF5F00102FC5 /* Companion */,
+				B25A585624D9852100102FC5 /* UserInfo */,
+				B264450524D2F188000BDD14 /* Questions */,
+				B28A2C7F24D17BED00E79D88 /* UserTrip */,
+				B28A2C6124D15A3D00E79D88 /* City */,
+				B28A2C5E24D159E700E79D88 /* Favorite */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B25D35DE24C4F1530015F66C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B25D35DF24C4F1610015F66C /* Cancellable.swift */,
+				B25D35E224C4F1D30015F66C /* UseCase.swift */,
+				B28A2C3D24D049E300E79D88 /* ObserverController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B25D35E924C4F2520015F66C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B25D35EA24C4F2620015F66C /* ValueObserver.swift */,
+				B20667912781833600988D8F /* Reachability.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B25D35F224C4F4220015F66C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B25D35F324C4F42C0015F66C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2BF124D024DA00E79D88 /* Domain */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B25D35FF24C4FE2A0015F66C /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B2B7979924CF12F400F79C06 /* TRPFavoriteUseCases.swift */,
+				B28A2BED24D0224B00E79D88 /* FetchFavoriteUseCase.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B25D777824F3E15500B7BEB1 /* UserReaction */ = {
+			isa = PBXGroup;
+			children = (
+				B25D777F24F3E16B00B7BEB1 /* UserReactionRepository.swift */,
+				B25D779124F3F58A00B7BEB1 /* TRPUserReactionRepository.swift */,
+			);
+			path = UserReaction;
+			sourceTree = "<group>";
+		};
+		B25D778524F3E7B900B7BEB1 /* UserReaction */ = {
+			isa = PBXGroup;
+			children = (
+				B25D778624F3E7D600B7BEB1 /* UserReactionRemoteApi.swift */,
+				B25D778824F3E7E700B7BEB1 /* TRPUserReactionRemoteApi.swift */,
+			);
+			path = UserReaction;
+			sourceTree = "<group>";
+		};
+		B25D778C24F3F53000B7BEB1 /* UserReaction */ = {
+			isa = PBXGroup;
+			children = (
+				B25D778F24F3F55500B7BEB1 /* UserReactionLocalStorage.swift */,
+			);
+			path = UserReaction;
+			sourceTree = "<group>";
+		};
+		B25D779324F3FDF900B7BEB1 /* UserReaction */ = {
+			isa = PBXGroup;
+			children = (
+				B25D779424F3FE1E00B7BEB1 /* UserReactionUseCases.swift */,
+				B25D779624F3FF1A00B7BEB1 /* TRPUserReactionUseCases.swift */,
+			);
+			path = UserReaction;
+			sourceTree = "<group>";
+		};
+		B25D77A024F4936E00B7BEB1 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				B25D77AF24F496EC00B7BEB1 /* ReservationRepository.swift */,
+				B25D77B624F499D900B7BEB1 /* TRPReservationRepository.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		B25D77B124F4983700B7BEB1 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				B25D77B224F4984700B7BEB1 /* ReservationRemoteApi.swift */,
+				B25D77B424F4987E00B7BEB1 /* TRPReservationRemoteApi.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		B25D77B824F49A1C00B7BEB1 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				B25D77BB24F49A3F00B7BEB1 /* UserReservationLocalStorage.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		B264450524D2F188000BDD14 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				B264450D24D2F659000BDD14 /* QuestionLocalStorage.swift */,
+				B264450F24D2F674000BDD14 /* TRPQuestionLocalStorage.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		B264450624D2F190000BDD14 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				B264450924D2F3B3000BDD14 /* QuestionRemoteApi.swift */,
+				B264450B24D2F3E7000BDD14 /* TRPQuestionRemoteApi.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		B264451124D2F88E000BDD14 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				B264451224D2F8A6000BDD14 /* QuestionUseCases.swift */,
+				B25A583924D9418200102FC5 /* TRPQuestionUseCases.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		B266F8CB24EAACB2008BB856 /* Poi */ = {
+			isa = PBXGroup;
+			children = (
+				B266F8D224EAACD5008BB856 /* PoiRepository.swift */,
+				B266F8DC24EAB33B008BB856 /* TRPPoiRepository.swift */,
+			);
+			path = Poi;
+			sourceTree = "<group>";
+		};
+		B266F8D424EAB0F4008BB856 /* Poi */ = {
+			isa = PBXGroup;
+			children = (
+				B266F8D524EAB103008BB856 /* PoiRemoteApi.swift */,
+				B266F8D724EAB132008BB856 /* TRPRemoteApi.swift */,
+			);
+			path = Poi;
+			sourceTree = "<group>";
+		};
+		B266F8D924EAB2ED008BB856 /* Poi */ = {
+			isa = PBXGroup;
+			children = (
+				B266F8DA24EAB2FE008BB856 /* PoiLocalStorage.swift */,
+			);
+			path = Poi;
+			sourceTree = "<group>";
+		};
+		B266F8E024EAB7FF008BB856 /* Poi */ = {
+			isa = PBXGroup;
+			children = (
+				B266F8E124EAB80E008BB856 /* PoiUseCases.swift */,
+				B266F8E324EABC08008BB856 /* TRPPoiUseCases.swift */,
+			);
+			path = Poi;
+			sourceTree = "<group>";
+		};
+		B26CA65324FF53A100805EB7 /* UserReservation */ = {
+			isa = PBXGroup;
+			children = (
+				B26CA65A24FF53C700805EB7 /* ReservationUseCases.swift */,
+				B26CA65C24FF558600805EB7 /* TRPReservationUseCases.swift */,
+			);
+			path = UserReservation;
+			sourceTree = "<group>";
+		};
+		B27FE2C824EC128C00A8F221 /* AlternativePoi */ = {
+			isa = PBXGroup;
+			children = (
+				B27FE2CF24EC12A700A8F221 /* AlternativePoiUseCase.swift */,
+			);
+			path = AlternativePoi;
+			sourceTree = "<group>";
+		};
+		B2810FE3250107F50097A97B /* EventStatus */ = {
+			isa = PBXGroup;
+			children = (
+				B2810FEA250108030097A97B /* ObserveTripEventStatus.swift */,
+			);
+			path = EventStatus;
+			sourceTree = "<group>";
+		};
+		B285C0BF24C9D0B500356C6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B978BE72697AC1A008DFDFF /* TRPRestKit.framework */,
+				6B352F7E269672B200B7C314 /* TRPFoundationKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B285C0E224C9FB3600356C6B /* RemoteApi */ = {
+			isa = PBXGroup;
+			children = (
+				B25D77B124F4983700B7BEB1 /* Reservation */,
+				B25D778524F3E7B900B7BEB1 /* UserReaction */,
+				B266F8D424EAB0F4008BB856 /* Poi */,
+				B257555024E4075B00FF1039 /* Plan */,
+				B257554424E3FF9400FF1039 /* Step */,
+				B25A588B24DAFEC900102FC5 /* Trip */,
+				B25A586824D9CD7500102FC5 /* Companion */,
+				B25A585124D983FB00102FC5 /* UserInfo */,
+				B264450624D2F190000BDD14 /* Questions */,
+				B28A2C7E24D17BE700E79D88 /* UserTrip */,
+				B28A2C6624D15A7200E79D88 /* City */,
+				B28A2C5F24D159EF00E79D88 /* Favorite */,
+				6B6A52B928BBAF25003125ED /* Offers */,
+			);
+			path = RemoteApi;
+			sourceTree = "<group>";
+		};
+		B285C0E724C9FF2200356C6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B285C0E824C9FF2E00356C6B /* TRPFavorite.swift */,
+				B2B7978824CEC5D700F79C06 /* FavoriteMapper.swift */,
+				B28A2C4524D090A000E79D88 /* TRPTaste.swift */,
+				B28A2C5524D1563100E79D88 /* TasteMapper.swift */,
+				B28A2C4724D090D000E79D88 /* TRPCity.swift */,
+				B28A2C4924D0915A00E79D88 /* CityMapper.swift */,
+				B28A2C7524D174BD00E79D88 /* TRPUserTrip.swift */,
+				B28A2C7724D174EC00E79D88 /* UserTripMapper.swift */,
+				B28A2C7924D1750100E79D88 /* TRPTripProfile.swift */,
+				B28A2C7B24D1751300E79D88 /* TripProfileMapper.swift */,
+				B26444FB24D2ECE5000BDD14 /* TRPQuestion.swift */,
+				B264450324D2ED81000BDD14 /* QuestionMapper.swift */,
+				B25A584624D981DF00102FC5 /* TRPUser.swift */,
+				B25A584824D9822000102FC5 /* TRPUserProfile.swift */,
+				B25A584D24D9829D00102FC5 /* UserMapper.swift */,
+				B25A584F24D982E100102FC5 /* UserProfileMapper.swift */,
+				B25A586224D9C9DD00102FC5 /* TRPCompanion.swift */,
+				B25A586424D9CA0800102FC5 /* CompanionMapper.swift */,
+				B25A587924DACF9900102FC5 /* TRPTrip.swift */,
+				B25A587B24DAD74200102FC5 /* TripMapper.swift */,
+				B25A587D24DAD9DB00102FC5 /* TRPPlan.swift */,
+				B25A588324DADA8000102FC5 /* PlanMapper.swift */,
+				B25A587F24DADA1500102FC5 /* TRPStep.swift */,
+				B25A588524DADBB200102FC5 /* StepMapper.swift */,
+				B25A588124DADA3500102FC5 /* TRPPoi.swift */,
+				B25A588724DADBFD00102FC5 /* PoiMapper.swift */,
+				B26DB0DD24DC4140006D0206 /* TRPPace.swift */,
+				B26DB0ED24DC448C006D0206 /* TRPAccommodation.swift */,
+				B26DB0F524DC44C0006D0206 /* AccommondationMapper.swift */,
+				B257556224E4235A00FF1039 /* TRPImage.swift */,
+				B257556424E4236F00FF1039 /* TRPImageOwner.swift */,
+				B257556624E4239900FF1039 /* ImageMapper.swift */,
+				B257556A24E4268600FF1039 /* TRPCategory.swift */,
+				B257556C24E426DE00FF1039 /* TRPBooking.swift */,
+				B259F34924E524B500358AFB /* BookingMapper.swift */,
+				B259F35124E526B500358AFB /* CategoryMapper.swift */,
+				B283645424E6D1FD009198BD /* DailyPlanRequestLoop.swift */,
+				B266F8DE24EAB488008BB856 /* PoiParameters.swift */,
+				B266F8E724EBC386008BB856 /* TRPPagination.swift */,
+				B266F8EB24EBC3FC008BB856 /* PaginationMapper.swift */,
+				B266F8ED24EBC68F008BB856 /* PaginationWithData.swift */,
+				B25D778124F3E1A500B7BEB1 /* TRPUserReaction.swift */,
+				B25D778A24F3E87200B7BEB1 /* UserReactionMapper.swift */,
+				B25D778324F3E1E200B7BEB1 /* TRPUserReactionType.swift */,
+				B25D77A724F494E200B7BEB1 /* TRPReservation.swift */,
+				B25D77A924F4951B00B7BEB1 /* ReservationMapper.swift */,
+				B25D77AB24F4952300B7BEB1 /* TRPYelp.swift */,
+				B25D77AD24F4958700B7BEB1 /* YelpMapper.swift */,
+				B25EC98C259CB9110027AF50 /* TRPGyg.swift */,
+				B25EC991259CB93D0027AF50 /* GYGMapper.swift */,
+				6BC19C2327BF8A2700696348 /* TRPPreGeneratedTheme.swift */,
+				6BA6C5E628A2FF7900E2DB69 /* TRPOffer.swift */,
+				6BA6C5E828A2FFE900E2DB69 /* TRPOfferProductType.swift */,
+				6BA6C5EE28A319E400E2DB69 /* OfferProductTypeMapper.swift */,
+				6BA6C5EA28A3009100E2DB69 /* TRPOfferTimeFrame.swift */,
+				6BA6C5F028A31ADD00E2DB69 /* OfferTimeFrameMapper.swift */,
+				6BA6C5EC28A301AE00E2DB69 /* OfferMapper.swift */,
+				6B542A492C5256DA00480273 /* TRPExportItinerary.swift */,
+				6BED46652C8DD905008B067A /* TRPLanguage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2899BDB24ED43BC0022B4FE /* TripAllDay */ = {
+			isa = PBXGroup;
+			children = (
+				B2899BE224ED43CB0022B4FE /* TripAllDayUseCases.swift */,
+				B2899BE424ED43FD0022B4FE /* TRPTripCheckAllPlanUseCases.swift */,
+				B2899BEE24ED4F790022B4FE /* TripGenerateController.swift */,
+			);
+			path = TripAllDay;
+			sourceTree = "<group>";
+		};
+		B28A2BF124D024DA00E79D88 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2BF224D024EB00E79D88 /* TRPFavoriteUseCasesTest.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B28A2C5D24D1588F00E79D88 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C6E24D161C100E79D88 /* CityUseCases.swift */,
+				B28A2C7024D1624200E79D88 /* TRPCityUseCases.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		B28A2C5E24D159E700E79D88 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B2B7977C24CEBDB300F79C06 /* TRPFavoriteLocalStorage.swift */,
+				B2B7977E24CEBDEE00F79C06 /* FavoriteLocalStorage.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B28A2C5F24D159EF00E79D88 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B2B7978024CEBE0100F79C06 /* FavoriteRemoteApi.swift */,
+				B2B7978224CEBE1200F79C06 /* TRPFavoriteRemoveApi.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B28A2C6024D159F700E79D88 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B25D35EC24C4F2970015F66C /* TRPFavoriteRepository.swift */,
+				B28A2C4124D07E3B00E79D88 /* FavoriteRepository.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B28A2C6124D15A3D00E79D88 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C6224D15A4D00E79D88 /* CityLocalStorage.swift */,
+				B28A2C6424D15A6400E79D88 /* TRPCityLocalStorage.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		B28A2C6624D15A7200E79D88 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C6724D15A8200E79D88 /* CityRemoteApi.swift */,
+				B28A2C6924D15AE900E79D88 /* TRPCityRemoteApi.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		B28A2C6B24D15CBC00E79D88 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C3F24D07E2600E79D88 /* CityRepository.swift */,
+				B28A2C6C24D15D1600E79D88 /* TRPCityRepository.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		B28A2C7224D168AE00E79D88 /* UserTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C7324D16C8A00E79D88 /* UserTripRepository.swift */,
+				B28A2C8824D1880400E79D88 /* TRPUserTripRepository.swift */,
+			);
+			name = UserTrip;
+			path = "UserTRİP";
+			sourceTree = "<group>";
+		};
+		B28A2C7D24D17BD800E79D88 /* UserTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C8A24D18BDF00E79D88 /* UserTripUseCases.swift */,
+				B28A2C8C24D18C4B00E79D88 /* TRPUserTripUseCases.swift */,
+			);
+			path = UserTrip;
+			sourceTree = "<group>";
+		};
+		B28A2C7E24D17BE700E79D88 /* UserTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C8424D1825D00E79D88 /* UserTripRemoteApi.swift */,
+				B28A2C8624D1830000E79D88 /* TRPUserTripRemoteApi.swift */,
+			);
+			path = UserTrip;
+			sourceTree = "<group>";
+		};
+		B28A2C7F24D17BED00E79D88 /* UserTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C8024D1820A00E79D88 /* UserTripLocalStorage.swift */,
+				B28A2C8224D1823100E79D88 /* TRPUserTripLocalStorage.swift */,
+			);
+			path = UserTrip;
+			sourceTree = "<group>";
+		};
+		B28A2C8E24D1B9BA00E79D88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B28A2C8F24D1B9C800E79D88 /* Date+Extensions.swift */,
+				B25AE09724F7D3770093DDF2 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B25D35B124C4F0020015F66C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D35C724C4F0020015F66C /* TRPDataLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B25D35B524C4F0020015F66C /* TRPDataLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25D35CA24C4F0020015F66C /* Build configuration list for PBXNativeTarget "TRPDataLayer" */;
+			buildPhases = (
+				B25D35B124C4F0020015F66C /* Headers */,
+				B25D35B224C4F0020015F66C /* Sources */,
+				B25D35B324C4F0020015F66C /* Frameworks */,
+				B25D35B424C4F0020015F66C /* Resources */,
+				B261F0B224CACD80000AC0A1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRPDataLayer;
+			productName = TRPDataLayer;
+			productReference = B25D35B624C4F0020015F66C /* TRPDataLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B25D35BE24C4F0020015F66C /* TRPDataLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25D35CD24C4F0020015F66C /* Build configuration list for PBXNativeTarget "TRPDataLayerTests" */;
+			buildPhases = (
+				B25D35BB24C4F0020015F66C /* Sources */,
+				B25D35BC24C4F0020015F66C /* Frameworks */,
+				B25D35BD24C4F0020015F66C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25D35C224C4F0020015F66C /* PBXTargetDependency */,
+			);
+			name = TRPDataLayerTests;
+			productName = TRPDataLayerTests;
+			productReference = B25D35BF24C4F0020015F66C /* TRPDataLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B25D35AD24C4F0020015F66C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Tripian Inc";
+				TargetAttributes = {
+					B25D35B524C4F0020015F66C = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					B25D35BE24C4F0020015F66C = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					B265067225574FE500E4C1C6 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = B25D35B024C4F0020015F66C /* Build configuration list for PBXProject "TRPDataLayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B25D35AC24C4F0020015F66C;
+			productRefGroup = B25D35B724C4F0020015F66C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B25D35B524C4F0020015F66C /* TRPDataLayer */,
+				B25D35BE24C4F0020015F66C /* TRPDataLayerTests */,
+				B265067225574FE500E4C1C6 /* TRPDataLayerAggregator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B25D35B424C4F0020015F66C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25D35BD24C4F0020015F66C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B261F0B224CACD80000AC0A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+		B265067925574FEA00E4C1C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build EXCLUDED_ARCHS=\"arm64\"\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\n# cp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/../TripianFrameworks/\"\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}/../TripianFrameworks/\"\n\n\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B25D35B224C4F0020015F66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25A586A24D9CD8E00102FC5 /* CompanionRemoteApi.swift in Sources */,
+				B257555224E4076C00FF1039 /* PlanRemoteApi.swift in Sources */,
+				B26CA65B24FF53C700805EB7 /* ReservationUseCases.swift in Sources */,
+				B257556124E41E2700FF1039 /* TripModelUseCases.swift in Sources */,
+				6B542A4A2C5256DA00480273 /* TRPExportItinerary.swift in Sources */,
+				B25D778B24F3E87200B7BEB1 /* UserReactionMapper.swift in Sources */,
+				B20667922781833600988D8F /* Reachability.swift in Sources */,
+				B28A2C4624D090A000E79D88 /* TRPTaste.swift in Sources */,
+				B25D779524F3FE1E00B7BEB1 /* UserReactionUseCases.swift in Sources */,
+				B25A588024DADA1500102FC5 /* TRPStep.swift in Sources */,
+				B257554824E3FFC500FF1039 /* TRPStepRemoteApi.swift in Sources */,
+				B283645524E6D1FD009198BD /* DailyPlanRequestLoop.swift in Sources */,
+				B26DB0F624DC44C0006D0206 /* AccommondationMapper.swift in Sources */,
+				6B6A52B428BBACAE003125ED /* TRPOfferUseCases.swift in Sources */,
+				B25AE09824F7D3770093DDF2 /* Array+Extensions.swift in Sources */,
+				B28A2C7124D1624200E79D88 /* TRPCityUseCases.swift in Sources */,
+				B2B5968D276EE1900083318E /* FileIO.swift in Sources */,
+				B257554324E3FF8500FF1039 /* TRPStepRepository.swift in Sources */,
+				B27FE2D024EC12A700A8F221 /* AlternativePoiUseCase.swift in Sources */,
+				B25D778024F3E16B00B7BEB1 /* UserReactionRepository.swift in Sources */,
+				B25D35ED24C4F2970015F66C /* TRPFavoriteRepository.swift in Sources */,
+				B266F8D624EAB103008BB856 /* PoiRemoteApi.swift in Sources */,
+				B257556324E4235A00FF1039 /* TRPImage.swift in Sources */,
+				B2B7977D24CEBDB300F79C06 /* TRPFavoriteLocalStorage.swift in Sources */,
+				B266F8E224EAB80E008BB856 /* PoiUseCases.swift in Sources */,
+				B257554124E3FDB400FF1039 /* StepRepository.swift in Sources */,
+				B25A589524DB041600102FC5 /* TRPTripRemoteApi.swift in Sources */,
+				B28A2C8D24D18C4B00E79D88 /* TRPUserTripUseCases.swift in Sources */,
+				B25A586024D9947700102FC5 /* TRPUserInfoUseCases.swift in Sources */,
+				B28A2C7624D174BD00E79D88 /* TRPUserTrip.swift in Sources */,
+				B25D35EB24C4F2620015F66C /* ValueObserver.swift in Sources */,
+				B257554624E3FFAA00FF1039 /* StepRemoteApi.swift in Sources */,
+				B25A58B324DBA3EE00102FC5 /* TRPEditTripUseCases.swift in Sources */,
+				6B6A52B828BBAF08003125ED /* TRPOfferRepository.swift in Sources */,
+				B25D77A824F494E200B7BEB1 /* TRPReservation.swift in Sources */,
+				B25A58A824DB9D9B00102FC5 /* TRPTripRepository.swift in Sources */,
+				6BED46622C8DD87F008B067A /* TRPLanguagesRepository.swift in Sources */,
+				B25D779024F3F55500B7BEB1 /* UserReactionLocalStorage.swift in Sources */,
+				B2066795278183AD00988D8F /* ReachabilityUseCases.swift in Sources */,
+				B264451024D2F674000BDD14 /* TRPQuestionLocalStorage.swift in Sources */,
+				B2899BEF24ED4F790022B4FE /* TripGenerateController.swift in Sources */,
+				6BA6C5F128A31ADD00E2DB69 /* OfferTimeFrameMapper.swift in Sources */,
+				6B6A52BD28BBAF98003125ED /* TRPOfferRemoteApi.swift in Sources */,
+				B28A2C6A24D15AE900E79D88 /* TRPCityRemoteApi.swift in Sources */,
+				B25A585024D982E100102FC5 /* UserProfileMapper.swift in Sources */,
+				B266F8D324EAACD5008BB856 /* PoiRepository.swift in Sources */,
+				B25A58A624DB9D7C00102FC5 /* TripLocalStorage.swift in Sources */,
+				6BA6C5ED28A301AE00E2DB69 /* OfferMapper.swift in Sources */,
+				B25A585C24D9856600102FC5 /* TRPUserInfoRepository.swift in Sources */,
+				B266F8D824EAB132008BB856 /* TRPRemoteApi.swift in Sources */,
+				B25A588F24DAFEF200102FC5 /* TripRepository.swift in Sources */,
+				B28A2C4224D07E3B00E79D88 /* FavoriteRepository.swift in Sources */,
+				B25A584E24D9829D00102FC5 /* UserMapper.swift in Sources */,
+				B257555B24E40C0800FF1039 /* TRPTripModelRepository.swift in Sources */,
+				B259F35224E526B500358AFB /* CategoryMapper.swift in Sources */,
+				B25A587C24DAD74200102FC5 /* TripMapper.swift in Sources */,
+				B257555924E40BF200FF1039 /* TripModelRepository.swift in Sources */,
+				B25AE0B624F93E930093DDF2 /* TRPLastSearchRepository.swift in Sources */,
+				B25A588224DADA3500102FC5 /* TRPPoi.swift in Sources */,
+				B25A585524D9843F00102FC5 /* TRPUserInfoRemoteApi.swift in Sources */,
+				B2899BE524ED43FD0022B4FE /* TRPTripCheckAllPlanUseCases.swift in Sources */,
+				B25A585A24D9854600102FC5 /* TRPUserInfoLocalStorage.swift in Sources */,
+				B25AE0BC24F944470093DDF2 /* LastSearchUseCases.swift in Sources */,
+				B264450E24D2F659000BDD14 /* QuestionLocalStorage.swift in Sources */,
+				B25A586524D9CA0800102FC5 /* CompanionMapper.swift in Sources */,
+				B257556524E4236F00FF1039 /* TRPImageOwner.swift in Sources */,
+				B285C0E924C9FF2E00356C6B /* TRPFavorite.swift in Sources */,
+				B25A588424DADA8000102FC5 /* PlanMapper.swift in Sources */,
+				B25D77B024F496EC00B7BEB1 /* ReservationRepository.swift in Sources */,
+				B266F8E824EBC386008BB856 /* TRPPagination.swift in Sources */,
+				B28A2C7824D174EC00E79D88 /* UserTripMapper.swift in Sources */,
+				B25AE0B924F93F420093DDF2 /* Storage.swift in Sources */,
+				B264450824D2F1AF000BDD14 /* TRPQuestionsRepository.swift in Sources */,
+				6B6A52B228BBAA2A003125ED /* OfferUseCases.swift in Sources */,
+				B26444FC24D2ECE5000BDD14 /* TRPQuestion.swift in Sources */,
+				6BED46682C8DDB2E008B067A /* FetchLanguagesUseCase.swift in Sources */,
+				B25A588D24DAFEE000102FC5 /* TripRemoteApi.swift in Sources */,
+				B266F8DD24EAB33B008BB856 /* TRPPoiRepository.swift in Sources */,
+				B2B7979A24CF12F400F79C06 /* TRPFavoriteUseCases.swift in Sources */,
+				B28A2C4824D090D000E79D88 /* TRPCity.swift in Sources */,
+				B25D77B324F4984700B7BEB1 /* ReservationRemoteApi.swift in Sources */,
+				B25A587124D9CFE100102FC5 /* TRPCompanionRepository.swift in Sources */,
+				B257553C24E3ECD200FF1039 /* TripUseCases.swift in Sources */,
+				B25D779724F3FF1A00B7BEB1 /* TRPUserReactionUseCases.swift in Sources */,
+				B25A586724D9CB2B00102FC5 /* CompanionRepository.swift in Sources */,
+				B25A585824D9852F00102FC5 /* UserInfoLocalStorage.swift in Sources */,
+				B25A587424D9F3F200102FC5 /* CompanionUseCases.swift in Sources */,
+				B25D77B524F4987E00B7BEB1 /* TRPReservationRemoteApi.swift in Sources */,
+				B25EC992259CB93D0027AF50 /* GYGMapper.swift in Sources */,
+				B266F8DB24EAB2FE008BB856 /* PoiLocalStorage.swift in Sources */,
+				B26DB0EE24DC448C006D0206 /* TRPAccommodation.swift in Sources */,
+				B25A585324D9840F00102FC5 /* UserInfoRemoteApi.swift in Sources */,
+				B26CA65D24FF558600805EB7 /* TRPReservationUseCases.swift in Sources */,
+				B25AE0B424F93C980093DDF2 /* LastSearchRepository.swift in Sources */,
+				B25A585E24D9873B00102FC5 /* UserInfoUseCases.swift in Sources */,
+				6B6A52BB28BBAF37003125ED /* OfferRemoteApi.swift in Sources */,
+				B25D77AE24F4958700B7BEB1 /* YelpMapper.swift in Sources */,
+				B259F34A24E524B500358AFB /* BookingMapper.swift in Sources */,
+				B28A2C6F24D161C100E79D88 /* CityUseCases.swift in Sources */,
+				B2B7978924CEC5D700F79C06 /* FavoriteMapper.swift in Sources */,
+				B257555624E409F500FF1039 /* TRPPlanRepository.swift in Sources */,
+				B25D778224F3E1A500B7BEB1 /* TRPUserReaction.swift in Sources */,
+				B247773224D2E39200A255A9 /* QuestionsRepository.swift in Sources */,
+				B25A587E24DAD9DB00102FC5 /* TRPPlan.swift in Sources */,
+				B25A586324D9C9DD00102FC5 /* TRPCompanion.swift in Sources */,
+				B283644D24E6D1E5009198BD /* PlanGenerateController.swift in Sources */,
+				B2899BE324ED43CB0022B4FE /* TripAllDayUseCases.swift in Sources */,
+				B28A2C8524D1825D00E79D88 /* UserTripRemoteApi.swift in Sources */,
+				B28A2C4A24D0915A00E79D88 /* CityMapper.swift in Sources */,
+				B25A588624DADBB200102FC5 /* StepMapper.swift in Sources */,
+				B25D35E024C4F1610015F66C /* Cancellable.swift in Sources */,
+				B28A2C8B24D18BDF00E79D88 /* UserTripUseCases.swift in Sources */,
+				B28A2C3E24D049E300E79D88 /* ObserverController.swift in Sources */,
+				6BED46642C8DD89B008B067A /* LanguagesRepository.swift in Sources */,
+				B257556D24E426DE00FF1039 /* TRPBooking.swift in Sources */,
+				B25D779224F3F58A00B7BEB1 /* TRPUserReactionRepository.swift in Sources */,
+				B25D778424F3E1E200B7BEB1 /* TRPUserReactionType.swift in Sources */,
+				B28A2C8924D1880400E79D88 /* TRPUserTripRepository.swift in Sources */,
+				B25D77AC24F4952300B7BEB1 /* TRPYelp.swift in Sources */,
+				6BED46662C8DD905008B067A /* TRPLanguage.swift in Sources */,
+				B264450A24D2F3B3000BDD14 /* QuestionRemoteApi.swift in Sources */,
+				B25A587A24DACF9900102FC5 /* TRPTrip.swift in Sources */,
+				B25D77B724F499D900B7BEB1 /* TRPReservationRepository.swift in Sources */,
+				B28A2C8324D1823100E79D88 /* TRPUserTripLocalStorage.swift in Sources */,
+				B266F8E424EABC08008BB856 /* TRPPoiUseCases.swift in Sources */,
+				B257553424E3E67500FF1039 /* StepUseCase.swift in Sources */,
+				B28A2C6524D15A6400E79D88 /* TRPCityLocalStorage.swift in Sources */,
+				B25D77AA24F4951B00B7BEB1 /* ReservationMapper.swift in Sources */,
+				B257553924E3EB2F00FF1039 /* TRPTripModeUseCases.swift in Sources */,
+				B257555E24E4163000FF1039 /* PlanUseCases.swift in Sources */,
+				B28A2C8724D1830000E79D88 /* TRPUserTripRemoteApi.swift in Sources */,
+				B257555424E4078000FF1039 /* TRPPlanRemoteApi.swift in Sources */,
+				B25D77BC24F49A3F00B7BEB1 /* UserReservationLocalStorage.swift in Sources */,
+				B28A2C7C24D1751300E79D88 /* TripProfileMapper.swift in Sources */,
+				B28A2C8124D1820A00E79D88 /* UserTripLocalStorage.swift in Sources */,
+				B2810FEB250108030097A97B /* ObserveTripEventStatus.swift in Sources */,
+				B264450424D2ED81000BDD14 /* QuestionMapper.swift in Sources */,
+				B264450C24D2F3E7000BDD14 /* TRPQuestionRemoteApi.swift in Sources */,
+				B25D778724F3E7D600B7BEB1 /* UserReactionRemoteApi.swift in Sources */,
+				B266F8DF24EAB488008BB856 /* PoiParameters.swift in Sources */,
+				B266F8EC24EBC3FC008BB856 /* PaginationMapper.swift in Sources */,
+				B25AE0BE24F944B80093DDF2 /* TRPLastSearchUseCases.swift in Sources */,
+				B2B7978124CEBE0100F79C06 /* FavoriteRemoteApi.swift in Sources */,
+				B28A2BEE24D0224B00E79D88 /* FetchFavoriteUseCase.swift in Sources */,
+				B257556724E4239900FF1039 /* ImageMapper.swift in Sources */,
+				B25A584724D981DF00102FC5 /* TRPUser.swift in Sources */,
+				6BA6C5EF28A319E400E2DB69 /* OfferProductTypeMapper.swift in Sources */,
+				B28A2C6324D15A4D00E79D88 /* CityLocalStorage.swift in Sources */,
+				B26DB0DE24DC4140006D0206 /* TRPPace.swift in Sources */,
+				B264451324D2F8A6000BDD14 /* QuestionUseCases.swift in Sources */,
+				B266F8EE24EBC68F008BB856 /* PaginationWithData.swift in Sources */,
+				B25A588824DADBFD00102FC5 /* PoiMapper.swift in Sources */,
+				B25A583A24D9418200102FC5 /* TRPQuestionUseCases.swift in Sources */,
+				B25D778924F3E7E700B7BEB1 /* TRPUserReactionRemoteApi.swift in Sources */,
+				6B6A52B628BBAD23003125ED /* OfferRepository.swift in Sources */,
+				6BC19C2427BF8A2700696348 /* TRPPreGeneratedTheme.swift in Sources */,
+				B28A2C9024D1B9C800E79D88 /* Date+Extensions.swift in Sources */,
+				B28A2C6D24D15D1600E79D88 /* TRPCityRepository.swift in Sources */,
+				B25D35E324C4F1D30015F66C /* UseCase.swift in Sources */,
+				B25A584524D9807A00102FC5 /* UserInfoRepository.swift in Sources */,
+				B2B7977F24CEBDEE00F79C06 /* FavoriteLocalStorage.swift in Sources */,
+				B28A2C7424D16C8B00E79D88 /* UserTripRepository.swift in Sources */,
+				B2B7978324CEBE1200F79C06 /* TRPFavoriteRemoveApi.swift in Sources */,
+				B28A2C5624D1563100E79D88 /* TasteMapper.swift in Sources */,
+				6BED465D2C8DD833008B067A /* TRPLanguagesUseCases.swift in Sources */,
+				B257556B24E4268600FF1039 /* TRPCategory.swift in Sources */,
+				B28A2C4024D07E2600E79D88 /* CityRepository.swift in Sources */,
+				6BA6C5EB28A3009100E2DB69 /* TRPOfferTimeFrame.swift in Sources */,
+				B25A584924D9822000102FC5 /* TRPUserProfile.swift in Sources */,
+				6BA6C5E928A2FFE900E2DB69 /* TRPOfferProductType.swift in Sources */,
+				B28A2C6824D15A8200E79D88 /* CityRemoteApi.swift in Sources */,
+				B257554F24E4069D00FF1039 /* PlanRepository.swift in Sources */,
+				6BA6C5E728A2FF7900E2DB69 /* TRPOffer.swift in Sources */,
+				B25A58AC24DBA06500102FC5 /* TRPCreateTripUseCase.swift in Sources */,
+				B25A586C24D9CDC800102FC5 /* TRPCompanionRemoteApi.swift in Sources */,
+				B25EC98D259CB9110027AF50 /* TRPGyg.swift in Sources */,
+				B28A2C7A24D1750100E79D88 /* TRPTripProfile.swift in Sources */,
+				B25A586F24D9CF7300102FC5 /* CompanionLocalStorage.swift in Sources */,
+				B25A587624D9F67500102FC5 /* TRPCompanionUseCases.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25D35BB24C4F0020015F66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28A2C1424D0286A00E79D88 /* FavoriteRemoteApi.swift in Sources */,
+				B28A2BF524D025D500E79D88 /* FetchFavoriteUseCase.swift in Sources */,
+				B25D361024C5026B0015F66C /* Cancellable.swift in Sources */,
+				B28A2C1824D028A500E79D88 /* FavoriteMapper.swift in Sources */,
+				B28A2BF324D024EB00E79D88 /* TRPFavoriteUseCasesTest.swift in Sources */,
+				B28A2C1724D0289700E79D88 /* TRPFavoriteLocalStorage.swift in Sources */,
+				B25D35F824C4F48B0015F66C /* TRPFavoriteRepository.swift in Sources */,
+				B28A2C1524D0287000E79D88 /* FavoriteLocalStorage.swift in Sources */,
+				B28A2BF624D0261E00E79D88 /* TRPFavoriteUseCases.swift in Sources */,
+				B2B7979024CF0CDF00F79C06 /* TRPFavorite.swift in Sources */,
+				B25D35F924C4F4A20015F66C /* ValueObserver.swift in Sources */,
+				B25D35C524C4F0020015F66C /* TRPDataLayerTests.swift in Sources */,
+				B25D361124C5026D0015F66C /* UseCase.swift in Sources */,
+				B28A2C1624D0289100E79D88 /* TRPFavoriteRemoveApi.swift in Sources */,
+				B283645624E6D258009198BD /* PlanGenerateController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B25D35C224C4F0020015F66C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B25D35B524C4F0020015F66C /* TRPDataLayer */;
+			targetProxy = B25D35C124C4F0020015F66C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B25D35C824C4F0020015F66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B25D35C924C4F0020015F66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B25D35CB24C4F0020015F66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../TripianFrameworks/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(SRCROOT)/../ModularIOS/TripianFrameworks/",
+				);
+				INFOPLIST_FILE = TRPDataLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripian.TRPDataLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B25D35CC24C4F0020015F66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(SRCROOT)/../TripianFrameworks/",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(SRCROOT)/../ModularIOS/TripianFrameworks/",
+				);
+				INFOPLIST_FILE = TRPDataLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripian.TRPDataLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B25D35CE24C4F0020015F66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWX3XD8XC2;
+				INFOPLIST_FILE = TRPDataLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripian.TRPDataLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B25D35CF24C4F0020015F66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWX3XD8XC2;
+				INFOPLIST_FILE = TRPDataLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripian.TRPDataLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B265067425574FE500E4C1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWX3XD8XC2;
+				ENABLE_BITCODE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B265067525574FE500E4C1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CWX3XD8XC2;
+				ENABLE_BITCODE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B25D35B024C4F0020015F66C /* Build configuration list for PBXProject "TRPDataLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25D35C824C4F0020015F66C /* Debug */,
+				B25D35C924C4F0020015F66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25D35CA24C4F0020015F66C /* Build configuration list for PBXNativeTarget "TRPDataLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25D35CB24C4F0020015F66C /* Debug */,
+				B25D35CC24C4F0020015F66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25D35CD24C4F0020015F66C /* Build configuration list for PBXNativeTarget "TRPDataLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25D35CE24C4F0020015F66C /* Debug */,
+				B25D35CF24C4F0020015F66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B265067325574FE500E4C1C6 /* Build configuration list for PBXAggregateTarget "TRPDataLayerAggregator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B265067425574FE500E4C1C6 /* Debug */,
+				B265067525574FE500E4C1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B25D35AD24C4F0020015F66C /* Project object */;
+}

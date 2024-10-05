@@ -1,0 +1,7 @@
+build/
+Carthage/
+/.DS_Store
+.DS_Store
+
+TRPDataLayer.xcodeproj/xcuserdata/cemcaygoz.xcuserdatad/xcschemes/xcschememanagement.plist
+xcuserdata/
